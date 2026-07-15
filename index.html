@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPEM Beira</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="theme-color" content="#0D47A1">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #eef3f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      width: 100%;
+      max-width: 460px;
+      background: white;
+      border-radius: 20px;
+      padding: 26px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,.12);
+    }
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 28px;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      color: #0D47A1;
+    }
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      padding: 15px 18px;
+      border-radius: 11px;
+      background: #0D47A1;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="icon-192.png" alt="Ícone TPEM Beira">
+    <h1>TPEM Beira</h1>
+    <p>Testemunho Público Especial Metropolitano</p>
+    <a href="https://script.google.com/macros/s/AKfycbym0EUdA4m8xW42DitbnBCF9WPqAibh5vDXIJBaLu944Ul5PObCbMeuX1xuFO-AoqkC/exec">Abrir sistema TPEM</a>
+  </main>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>
