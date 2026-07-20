@@ -1,7 +1,7 @@
 {
   "name": "TPERM Beira",
   "short_name": "TPERM Beira",
-  "description": "Sistema do Testemunho Público Especial Metropolitano da Beira",
+  "description": "Sistema do Testemunho Público Especial em Regioões Metropolitanas da Beira",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
