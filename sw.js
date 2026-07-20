@@ -1,4 +1,4 @@
-const CACHE_NAME = "tpem-beira-v1";
+const CACHE_NAME = "tperm-beira-v1";
 const ASSETS = [
   "./",
   "./index.html",
